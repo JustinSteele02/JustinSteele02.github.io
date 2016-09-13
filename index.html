@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Justin Steele Web Developer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="jumbotron" id="about">
+      <div class="container" id="about-container">
+        <nav class="navbar navbar-inverse navbar-fixed-top navbar-bg">
+          <div class="container" id="nav-container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <h2 class="navbar-brand">Justin Steele</h2>
+            </div>
+            <div class="collapse navbar-collapse" id="my-navbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="row" id="about-main">
+          <div class="col-md-8 col-md-offset-2" id="header-wrapper">
+            <h1>Hi, my name's Justin. I like to make cool things on the web.</h1>
+          </div>
+        </div>
+        <h2 class="page-header">Skills</h2>
+        <div class="row">
+          <div class="col-xs-4 col-sm-2">
+            <img src="img/HTML.svg" alt="" class="img-responsive web-icon">
+          </div>
+          <div class="col-xs-4 col-sm-2">
+            <img src="img/CSS.svg" alt="" class="img-responsive web-icon">
+          </div>
+          <div class="col-xs-4 col-sm-2">
+            <img src="img/Javascript.svg" alt="" class="img-responsive web-icon">
+          </div>
+          <div class="col-xs-4 col-sm-2">
+            <img src="img/jQuery.svg" alt="" class="img-responsive web-icon">
+          </div>
+          <div class="col-xs-4 col-sm-2">
+            <img src="img/Bootstrap.svg" alt="" class="img-responsive web-icon">
+          </div>
+          <div class="col-xs-4 col-sm-2">
+            <img src="img/SASS.svg" alt="" class="img-responsive web-icon">
+          </div>
+          <div class="col-xs-4 col-sm-2">
+            <img src="img/Git.svg" alt="" class="img-responsive web-icon">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pfolio" id="portfolio">
+      <div class="col-sm-6 col-md-4 pfolio-img-wrapper">
+        <a href="https://JustinSteele02.github.io/weather-app"><img class="pfolio-img" src="img/WeatherApp.jpg" alt="Weather App"></a>
+      </div>
+      <div class="col-sm-6 col-md-4 pfolio-img-wrapper">
+        <a href="https://JustinSteele02.github.io/inspire-me"><img class="pfolio-img" src="img/Quote.jpg" alt="Random Quote Generator"></a>
+      </div>
+      <div class="col-sm-6 col-md-4 pfolio-img-wrapper">
+        <a href="https://JustinSteele02.github.io/js-calculator"><img class="pfolio-img" src="img/Calc.jpg" alt="JS Calculator"></a>
+      </div>
+      <div class="col-sm-6 col-md-4 pfolio-img-wrapper">
+        <a href="https://JustinSteele02.github.io/asterbreak"><img class="pfolio-img" src="img/AsterBreak.jpg" alt="Pixel Arcade"></a>
+      </div>
+      <div class="col-sm-6 col-md-4 pfolio-img-wrapper">
+        <a href="https://codepen.io/JustinSteele/full/KgVbYz/"><img class="pfolio-img" src="img/TributePage.jpg" alt="Coming Soon"></a>
+      </div>
+      <div class="col-sm-6 col-md-4 pfolio-img-wrapper">
+        <a href="#"><img class="pfolio-img" src="http://placehold.it/500x270?text=Coming+Soon" alt="Coming Soon"></a>
+      </div>
+    </div>
+    <div class="container-fluid" id="contact">
+      <div class="container">
+        <h1>Contact Me!</h1>
+        <form id="contact-form" method="POST">
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder="Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="_replyto" class="form-control" placeholder="Email Address" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <textarea name="description" class="form-control" placeholder="Message" rows="4" cols="60" required></textarea>
+          </div>
+          <input type="text" name="_gotcha" style="display:none" />
+          <input class="btn btn-default" data-dismiss="modal" type="submit" id="form-submit-btn" value="Submit">
+          <!--<input type="hidden" name="_next" value="#" onclick="FormSentConfirmation()"/>-->
+        </form>
+      </div>
+    </div>
+    <footer></footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+<!--
+TO DO:
+  add active class to navbar for current page section
+  custom confirmation page or alert after sending email
+  fix navbar transparency on mobile
+  add portrait and text in intro
+  fill out footer section
+  better fonts

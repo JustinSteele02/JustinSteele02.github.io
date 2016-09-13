@@ -1,0 +1,137 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*Navbar*/
+
+.navbar {
+  border-radius: 0;
+  border: none;
+  background: none;
+  font-size: 1.5em;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.navbar * {
+  color: white !important;
+}
+
+.navbar-nav li:hover, .active-section {
+  text-decoration: underline;
+}
+
+.navbar-bg {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/*About Section*/
+
+#about {
+  margin: 0;
+  padding-bottom: 10px;
+  background: url(img/OfficeCodeDarkened.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+#about-main {
+  margin: 120px 0;
+}
+
+#header-wrapper {
+  text-align: center;
+  font-family: Georgia;
+}
+
+#header-wrapper h1 {
+  font-size: 48px !important;
+}
+
+.web-icon {
+  margin: auto;
+  margin-bottom: 10px;
+  max-height: 100px;
+}
+
+/*Portfolio Section*/
+#portfolio {
+  background: #cccccc;
+}
+
+.pfolio * {
+  margin: 0;
+  padding: 0 !important;
+}
+
+.pfolio-img-wrapper {
+  overflow: hidden;
+  border: 3px solid #2a2a2a;
+}
+
+.pfolio-img {
+  width: 100%;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  filter: blur(0);
+  -webkit-filter: blur(0);
+}
+
+.pfolio-img:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/*Contact Section*/
+
+#contact {
+  padding: 40px 0 40px 0;
+  background: url(img/ContactBG.png);
+  color: white;
+}
+
+#contact h1 {
+  font-family: Georgia;
+}
+
+form * {
+  background: none !important;
+  color: white !important;
+}
+
+button {
+  background: none;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 991px) {
+  #about-container {
+    margin-top: 30px;
+  }
+
+  #about-container p {
+    margin-bottom: 70px;
+  }
+}
