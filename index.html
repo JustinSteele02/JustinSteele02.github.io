@@ -6,7 +6,14 @@
     <title>Justin Steele Web Developer</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <style>
+      #about {
+        background: url(img/OfficeCodeDarkened.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
   </head>
   <body>
     <div class="jumbotron" id="about">
@@ -105,6 +112,22 @@
     </div>
     <footer></footer>
 
+    <noscript id="deferred-styles">
+     <link rel="stylesheet" type="text/css" href="style.css"/>
+   </noscript>
+   <script>
+     var loadDeferredStyles = function() {
+       var addStylesNode = document.getElementById("deferred-styles");
+       var replacement = document.createElement("div");
+       replacement.innerHTML = addStylesNode.textContent;
+       document.body.appendChild(replacement)
+       addStylesNode.parentElement.removeChild(addStylesNode);
+     };
+     var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+         webkitRequestAnimationFrame || msRequestAnimationFrame;
+     if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+     else window.addEventListener('load', loadDeferredStyles);
+   </script>
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

@@ -45,10 +45,6 @@ html, body {
 #about {
   margin: 0;
   padding-bottom: 10px;
-  background: url(img/OfficeCodeDarkened.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   color: white;
 }
 
